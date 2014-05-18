@@ -1,0 +1,60 @@
+* {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#wrapper{ margin:0 auto;width: 400px;}
+#heading{ width:340px; text-align:center; padding:10px; margin-top:10px;}
+#puzzleBox{
+	float:left;
+	width: 370px;
+	z-index: 1;
+	margin-top:10px;
+}
+#message{ float:left; text-align:center; min-width: 300px; padding:10px; 	
+	margin:20px;
+}
+#message.success{ color:#fff; display:block; background:#2ecc71; }
+#message.error{ color:#fff;display:block; background:#e74c3c;} 
+#message.congrats{ 	float:left;
+	z-index: 1;
+	padding:20px;
+	background: #3498db;
+	color:#fff;
+	margin-top:100px;
+}
+#puzzleBox div {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: #d9d9d9;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #999;
+	cursor: pointer;
+	z-index: 2;
+}
+#puzzleBox div img {
+	border: none;
+	z-index: 3;
+	width:100px; height:100px;
+}
+.hidden {
+	visibility:hidden;
+}
+.phrase{ display:none}
+#message .restart{ padding:5px 10px; background: #cacfd2; color:#000; border:0;  font-size:14px; margin-left:20px;}
+
+.fields {
+	float:left;
+	width: 230px;
+	z-index: 1;
+	padding:20px;
+	background: #3498db;
+	margin-top:100px;
+	border:1px solid #2980b9;
+}
+.fields p{ color:#fff; margin-bottom:10px;}
+.fields p.errormsg{ display:none; font-size:14px; color: #e74c3c; border:1px solid #e74c3c; float:left; background:#eee; padding:10px;}
+.fields input.matrixCount{ height:20px; width:100px; padding:5px; color:#666; margin-bottom:10px;}
+.fields input.btn_submit{ height:30px; width:50px; padding:5px; color:#666; margin-bottom:10px; border:0}
